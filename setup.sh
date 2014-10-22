@@ -17,7 +17,7 @@ usage()
 clean_all()
 {
     pushd ${HOME} > /dev/null 2>&1
-    ls -a | grep -v -E '^\.$|^\.\.$|^\.bash_history$|^\.bash_logout$|^\.bashrc$|^\.bash_profile$|^\.emacs$|^\.mozilla$|^setup\.sh$|^src$|^bin$' | xargs rm -rf
+    ls -a | grep -v -E '^\.$|^\.\.$|^\.bash_history$|^\.bash_logout$|^\.bashrc$|^\.bash_profile$|^\.emacs$|^\.emacs\.orig$|^\.gitconfig$|^\.mozilla$|^setup\.sh$|^src$|^bin$' | xargs rm -rf
     popd > /dev/null 2>&1
 }
 
@@ -154,7 +154,7 @@ install_emacs()
 	return
     fi
 
-    EMACS=emacs-24.3
+    EMACS=emacs-24.4
     EMACS_TARBALL=${EMACS}.tar.gz
     wget http://ftp.jaist.ac.jp/pub/GNU/emacs/${EMACS_TARBALL}
     rc=$?

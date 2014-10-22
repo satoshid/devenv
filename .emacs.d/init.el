@@ -42,8 +42,6 @@
 ;; undo-tree
 (push '(" *undo-tree*" :width 0.3 :position right) popwin:special-display-config)
 
-(add-to-list 'load-path "~/.emacs.d")
-
 ;; lang, encoding
 (set-language-environment "japanese")
 (set-terminal-coding-system 'utf-8)
