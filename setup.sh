@@ -47,7 +47,7 @@ install_libevent()
 
     LIBEVENT=libevent-2.0.21-stable
     LIBEVENT_TARBALL=${LIBEVENT}.tar.gz
-    wget http://sourceforge.net/projects/levent/files/libevent/libevent-2.0/${LIBEVENT_TARBALL}/download
+    wget https://github.com/downloads/libevent/libevent/${LIBEVENT_TARBALL}
     rc=$?
     if [ $rc -gt 0 ]; then
 	echo "libevent: exit wget" $0
